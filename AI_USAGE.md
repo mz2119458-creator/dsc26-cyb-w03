@@ -2,7 +2,7 @@
 We used an AI assistant to discuss edge cases for Unicode NFC normalization, bidi control character filtering, and secure scrypt parameter parsing in Python 3.12.
 
 ## What AI got wrong
-The AI initially suggested loose checks for `size_bytes` that accepted booleans and floats, and missed edge cases in scrypt salt and hash length decoding checks.
+The AI initially suggested loose checks for size_bytes that accepted booleans and floats, and missed edge cases in scrypt salt and hash length decoding checks.
 
 ## In my own words
 1. Why does get_document return 404 rather than 403 when a client asks for another client's contract?
