@@ -51,6 +51,10 @@ def _parse_stored(stored: str):
     if scheme != "scrypt":
         return None
     
+    # Prevent extremely long strings to avoid DoS on int conversion
+    if len(n_str) > 7 or len(r_str) > 4 or len(p_str) > 4:
+        return None
+
     try:
         n = int(n_str)
         r = int(r_str)
